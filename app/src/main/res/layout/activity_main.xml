@@ -69,15 +69,33 @@
             android:layout_weight="1.5" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/l_2"
+    <LinearLayout
+        android:layout_below="@id/l_2"
         android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
-        android:text="@string/sing_in"
-        android:textColor="@color/cardview_light_background"
-        android:backgroundTint="@color/cardview_dark_background"
-        style="@style/MyStyle" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/sing_in"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cardview_dark_background"
+            style="@style/MyStyle" />
+
+        <Button
+            android:id="@+id/button_registration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/registration"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cardview_dark_background"
+            style="@style/MyStyle" />
+
+    </LinearLayout>
 </RelativeLayout>
